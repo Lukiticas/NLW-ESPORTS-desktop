@@ -1,8 +1,19 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ["./src/**/*.tsx"],
+  content: ["./src/**/*.tsx", "./index.html"],
   theme: {
-    extend: {},
+    fontFamily: {
+      sans: ["inter", "sans-serif"],
+    },
+    extend: {
+      backgroundImage: {
+        galaxy: "url('/background-galaxy.svg')",
+        "nlw-gradient":
+          "linear-gradient(90deg, #9573FC 33%, #43E7AD 70%, #E1D55D 100%)",
+        "game-gradient":
+          "linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.9) 67%)",
+      },
+    },
   },
   plugins: [],
 };
